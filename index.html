@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Premium Cricket Bats Online | CricketGearHub</title>
-    <meta name="description" content="Shop top-quality cricket bats online at CricketGearHub. Find English Willow, Kashmir Willow, and tape ball bats at the best prices with fast delivery.">
-    <meta name="keywords" content="cricket bats, buy cricket bats online, English Willow bats, cricket equipment">
+    <title>Cricket Bats - CricketGearHub</title>
+    <meta name="description" content="Explore a wide range of cricket bats at CricketGearHub. Find the best deals on premium cricket equipment online.">
+    <meta name="keywords" content="cricket bats, buy cricket bats, cricket equipment">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <style>
@@ -15,80 +15,109 @@
             background-color: #f4f7fa;
             line-height: 1.6;
         }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
         nav {
             background-color: #1a7c80;
-            padding: 1.2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav .logo {
             font-size: 1.8rem;
             color: #fff;
             font-weight: 600;
         }
-        nav a {
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav ul li a {
             color: #fff;
             text-decoration: none;
-            margin: 0 1.5rem;
             font-size: 1.1rem;
         }
-        nav a:hover {
+        nav ul li a:hover {
             color: #f39c12;
+        }
+        .sidebar {
+            width: 20%;
+            padding: 1rem;
+            background: #fff;
+            margin-right: 2rem;
+        }
+        .sidebar h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 0.5rem;
+        }
+        .sidebar ul li a {
+            color: #34495e;
+            text-decoration: none;
+        }
+        .sidebar ul li a:hover {
+            color: #f39c12;
+        }
+        .main-content {
+            width: 80%;
         }
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding-top: 1rem;
         }
         .product-card {
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: center;
         }
         .product-card h3 {
-            font-size: 1.3rem;
-            margin: 1rem;
+            font-size: 1.1rem;
             color: #2c3e50;
+            margin: 0.5rem 0;
         }
         .product-card p {
             font-size: 1rem;
             color: #e74c3c;
-            margin: 0 1rem 1rem;
+            margin: 0.5rem 0;
         }
         .product-card button {
             background-color: #f39c12;
             color: #fff;
-            padding: 0.8rem 2rem;
             border: none;
-            border-radius: 20px;
-            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
             cursor: pointer;
-            margin: 1rem;
-            width: calc(100% - 2rem);
-            transition: transform 0.2s;
+            font-size: 0.9rem;
         }
         .product-card button:hover {
             background-color: #e67e22;
-            transform: scale(1.05);
         }
-        @media (max-width: 600px) {
-            .product-grid {
-                grid-template-columns: 1fr;
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar, .main-content {
+                width: 100%;
             }
         }
     </style>
@@ -96,26 +125,46 @@
 <body>
     <nav>
         <div class="logo">CricketGearHub</div>
-        <div>
-            <a href="/">Home</a>
-            <a href="/cricket-bats">Cricket Bats</a>
-            <a href="/gear">Gear</a>
-            <a href="/contact">Contact</a>
-        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
     </nav>
-    <section class="product-grid">
-        <div class="product-card">
-            <img src="bat1.jpg" alt="Elite Pro English Willow Cricket Bat">
-            <h3>Elite Pro English Willow Bat</h3>
-            <p>PKR 150,000</p>
-            <button>Add to Cart</button>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Filters</h3>
+            <ul>
+                <li><a href="#">All Bats</a></li>
+                <li><a href="#">English Willow</a></li>
+                <li><a href="#">Kashmir Willow</a></li>
+                <li><a href="#">Tape Ball</a></li>
+            </ul>
         </div>
-        <div class="product-card">
-            <img src="bat2.jpg" alt="PowerHit Tape Ball Cricket Bat">
-            <h3>PowerHit Tape Ball Bat</h3>
-            <p>PKR 5,000</p>
-            <button>Add to Cart</button>
+        <div class="main-content">
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>Elite Pro Bat</h3>
+                    <p>PKR 150,000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <h3>PowerHit Bat</h3>
+                    <p>PKR 5,000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <h3>Classic Willow Bat</h3>
+                    <p>PKR 80,000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <h3>Junior Tape Bat</h3>
+                    <p>PKR 3,500</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 </body>
 </html>
