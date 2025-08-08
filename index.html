@@ -7,12 +7,90 @@
     <meta name="description" content="Shop top-quality cricket bats online at CricketGearHub. Find English Willow, Kashmir Willow, and tape ball bats at the best prices with fast delivery.">
     <meta name="keywords" content="cricket bats, buy cricket bats online, English Willow bats, cricket equipment">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://yourwebsite.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <style>
-        /* CSS from previous response */
-        body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #f4f7fa; }
-        nav { background-color: #1a7c80; padding: 1.2rem; display: flex; justify-content: space-between; }
-        /* ... rest of the CSS ... */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fa;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #1a7c80;
+            padding: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav .logo {
+            font-size: 1.8rem;
+            color: #fff;
+            font-weight: 600;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            font-size: 1.3rem;
+            margin: 1rem;
+            color: #2c3e50;
+        }
+        .product-card p {
+            font-size: 1rem;
+            color: #e74c3c;
+            margin: 0 1rem 1rem;
+        }
+        .product-card button {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin: 1rem;
+            width: calc(100% - 2rem);
+            transition: transform 0.2s;
+        }
+        .product-card button:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
